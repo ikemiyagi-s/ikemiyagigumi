@@ -3,6 +3,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>知罵弐阿組：仕事依頼</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="http://webma-ru.com/tc/js/jquery.css3form.js"></script>
+<link type="text/css" rel="stylesheet" href="http://webma-ru.com/tc/css/forms_pop.css" media="screen">
+<script type="text/javascript">
+$(function(){
+	$(".form").css3form();
+});
+</script>
 </head>
 
 <body>
@@ -39,8 +48,112 @@
 	<!--トップ画像終わり----->
   
   <!--コンテンツエリア----->
-  
-  
+  <div class="form">
+
+
+
+<dt><font color="red">*</font>は必須項目です．</dt>
+<form action="formmail.php" method="post">
+			
+			<fieldset>
+			<legend>仕事依頼</legend>
+				<dl>
+
+
+
+
+					<dd>
+<input type="radio" name="gender" checked value="新兵育成事業" id="_male1"><label for="_male1">新兵育成事業</label>
+<input type="radio" name="gender" value="直接戦闘" id="_male2"><label for="_male2">直接戦闘</label>
+</dd><br/><br/>
+<dd>
+<input type="radio" name="gender2" value="用心警護" id="_male"><label for="_male">用心警護</label>
+<input type="radio" name="gender2" value="物資補給" id="_female1"><label for="_female1">兵站（物資補給）</label>
+</dd><br/><br/>
+<dd>
+<input type="radio" name="gende3r" value="スナイパー" id="_female2"><label for="_female2">スナイパー</label>
+<input type="radio" name="gende3r" value="その他" id="_female3"><label for="_female3">その他</label>
+					</dd><br/><br/>
+<br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<dt>お名前</dt>
+<input type="text" name="name" size="30" maxlength="20"><br/><br/>
+<dt>所属組織</dt>
+<input type="text" name="name" size="30" maxlength="20"><br/><br/>
+<dt>ボスの<br>お名前（責任者）<font color="red">*</font></dt>
+<input type="text" name="name" size="30" maxlength="20"><br/><br/>
+<dt>e-mail</dt>
+<input type="text" name="name" size="30" maxlength="20"><br/><br/>
+
+
+
+
+
+
+<dd>
+<dt>ご依頼の詳細</dt>
+<textarea name="q4" cols="50" rows="4" class="formInput1"></textarea>
+</dd>
+
+
+
+<br/><br/>
+<dd>
+					<dt>返信方法</dt>
+</dd>
+
+					<dd>
+						<input type="checkbox" value="メール" id="_contanctMail" name="q3-1"><label for="_contanctMail">メール</label>
+						<input type="checkbox" value="お電話" id="_contanctTel" name="q3-2"><label for="_contanctTel">お電話</label>
+						<input type="checkbox" value="お手紙" id="_contanctLetter" name="q3-3"><label for="_contanctLetter">お手紙</label>
+						<input type="checkbox" value="極秘" id="_contanctFAX" name="q3-4"><label for="_contanctFAX">極秘</label>
+					</dd>
+
+
+
+
+<br/><br/>
+
+					<dt>今回のミッションのポイントをお聞かせください</dt>
+					<dd>
+						<select class="age1" name="ages1">
+							<option value="">ミッションのポイントを選択</option>
+							<option value="15代未満">とにかくスピーディーに</option>
+							<option value="10代未満">できればリーズナブルに</option>
+							<option value="20代未満">確実な任務を</option>
+							<option value="30代未満">失敗は絶対ゆるさない</option>
+							<option value="40代未満">成功のためなら金額は</option>
+							<option value="50代未満">とにかく極秘で</option>
+                            <option value="50代未満"> </option>
+						</select>
+					</dd>
+
+
+
+
+<br/><br/>
+					<dt>合言葉を設定しますか？</dt>
+					<dd>
+						<input class="more" name="q3-5" id="q1" type="radio"><label for="q1">はい</label>
+						<input name="q3-5" id="q2" type="radio" checked><label for="q2">いいえ</label>
+						<div class="moreQuestion">
+							<p>合言葉は？</p>
+							<input type="text" name="pref" value="武士道">
+						</div>
+					</dd>
+
+				</dl>
+			</fieldset>
+
+
+<FORM>
+  <BUTTON type="submit">
+  <IMG src="http://hichai.info/formmail/img/sousin.png" width="60" height="15">
+</BUTTON>
+<BUTTON type="reset">
+  <IMG src="http://hichai.info/formmail/img/reset.png" width="60" height="15"></BUTTON>
+</FORM>
+
   
   <!--コンテンツエリア終わり----->
   
